@@ -6,11 +6,11 @@ const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 const path = require('path')
 const config = merge(base, {
   entry: {
-    app: './src/entry-client.js'
+    app: './page/entry-client.js'
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../src'),
+      '@': path.resolve(__dirname, '../page'),
     }
   },
   plugins: [
