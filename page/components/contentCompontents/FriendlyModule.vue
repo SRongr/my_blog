@@ -2,17 +2,17 @@
   .wrapper
     .title 友情链接
     .content
-      a.content-item 挨踢茶馆
-      a.content-item 个人博客
-      a.content-item 技术网站
-      a.content-item 个人博客个人博客
-      a.content-item 技术网站
+      a.content-item(v-for='item, index in data',:href="data.href") {{item.content}}
+
 </template>
 
 
 <script>
 export default {
-  
+  props: ['data'],
+  mounted() {
+    console.log(this.data)
+  }
 
 }
 </script>

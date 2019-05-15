@@ -5,62 +5,159 @@
       .now 站点地图
     .content
       .content-title 最新文章
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
-      li 哈哈哈哈
+      li(v-for='item,index in data') 
+        a(href="") {{item.content}}
+
 </template>
 
 
 <script>
 export default {
+  data() {
+    return{
+      data: [
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        },
+        {
+          content: '哈哈哈哈',
+          src: ''
+        }
+      ]
+    }
+  },
+  mounted() {
+    
+  }
 }
 </script>
 
@@ -89,4 +186,6 @@ export default {
       li 
         padding 0 20px
         text-decoration underline
+        a
+          text-decoration none
 </style>

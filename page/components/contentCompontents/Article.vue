@@ -1,15 +1,19 @@
 <template lang="pug">
   .wrapper
     .content
-      a.title 【更新】PC端微信(2.6.7.57)防撤回
-      .content-text 2019-4-24更新微信 2.6.7.57防撤回，搜索 偏移量 00252185，数值75改为74 。—————————–此方法仅限于官网下载的PC版微信2.6.6.28版本。工具：winhex19、pc版微信打开winhex19， 文件->打开，定位并找到微信安装目录中的WeChatWin.dll，打开。点击左侧offset列，使偏移量转为16进制格式显示。点击工...
+      a.title(:href="data.href")  {{data.title}}
+      .content-text {{data.content}}
     .foot
       .foot-text 发布于2019-02-14 | 浏览 (123) | Tags: 微信
 </template>
 
 <script>
 export default {
-  
+  props: ['data'],
+  data() {
+    return {
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -29,6 +33,7 @@ export default {
         font-size 20px
         font-weight 500
         color #000000
+        text-decoration none
         &.title:hover 
           color #457ab2
           cursor pointer

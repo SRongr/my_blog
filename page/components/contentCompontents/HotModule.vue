@@ -2,16 +2,16 @@
   .wrapper
     .title 最近热门
     .content
-      a.content-item adad a a as d  
-      a.content-item adad a a as d
-      a.content-item 你好啊啊 你好啊啊 按时 啊 爱我的按就啊哈哈哈哈
+      a.content-item(v-for="item in data", :href="item.href") {{item.content}}
 </template>
 
 
 <script>
 export default {
-  
-
+  props: ['data'],
+  mounted() {
+    console.log(this.data)
+  }
 }
 </script>
 
@@ -46,6 +46,7 @@ export default {
         white-space nowrap
         overflow hidden
         text-overflow ellipsis
+        text-decoration none
         &.content-item:hover 
           color #457ab2 !important
           cursor pointer

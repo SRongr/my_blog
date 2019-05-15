@@ -2,9 +2,9 @@
   .wrapper
     .article 
       .title 每日一句
-      .english If you wish to survive, you need to cultivate a strong mental attitude.
-      .chinese 若想生存下去，就得培养坚强的意志。
-      .person — — — — 《阿凡达》
+      .english {{data.english}}
+      .chinese {{data.chinese}}
+      .person — — — — {{data.author}}
 </template>
 
 <script>

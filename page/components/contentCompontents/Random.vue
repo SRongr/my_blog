@@ -2,22 +2,33 @@
   .wrapper
     .title 随机标签云
     .content
-      a.tag(:style="{color: `#${colorArr[Math.floor(Math.random()*10)]}`,fontSize: `${Math.floor(Math.random()*20) + 12}px`}") ads
-      a.tag(:style="{color: `#${colorArr[Math.floor(Math.random()*10)]}`,fontSize: `${Math.floor(Math.random()*20) + 12}px`}") ads
-      a.tag(:style="{color: `#${colorArr[Math.floor(Math.random()*10)]}`,fontSize: `${Math.floor(Math.random()*20) + 12}px`}") ads
-      a.tag(:style="{color: `#${colorArr[Math.floor(Math.random()*10)]}`,fontSize: `${Math.floor(Math.random()*20) + 12}px`}") ads
-      a.tag(:style="{color: `#${colorArr[Math.floor(Math.random()*10)]}`,fontSize: `${Math.floor(Math.random()*20) + 12}px`}") ads
-
+      a.tag(v-for="item in data" :style="{color: randomColor(),fontSize: randomFontSize()}") {{item.content}}
 </template>
 
 
 <script>
 export default {
+  props: ['data'],
   data() {
     return {
       colorArr: ['f8e666','7d4dae', '6da049', 'efa8b0', 'aa9462', 'c856e6', '89f4e9', 'efbcf2', 'bfbb99', 'cd7161']
     }
   },
+  computed: {
+    randomColor () {
+      return function () {
+        const red = Math.random() * 255
+        const green = Math.random() * 255
+        const blue = Math.random() * 255
+        return `rgb(${red},${green},${blue})`
+      }
+    },
+    randomFontSize () {
+      return function () {
+        return `${Math.random()* 15 + 12}px`
+      }
+    }
+  }
 
 }
 </script>

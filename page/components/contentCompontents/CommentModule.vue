@@ -2,6 +2,12 @@
   .wrapper
     .title 最新评论
     .content
+      .content-item(v-for='item in data')
+        .item-top
+          .name {{item.name}}
+          .time {{item.time}}
+        .item-bottom
+          .text {{item.content}}
       .content-item 
         .item-top
           .name bbb
@@ -20,15 +26,15 @@
           .time [6天前]
         .item-bottom 
           .text 啊大大阿达啊啊 啊
-      //- a.content-item adad a a as d  
-      //- a.content-item adad a a as d
-      //- a.content-item 你好啊啊 你好啊啊 按时 啊 爱我的按就啊哈哈哈哈
 </template>
 
 
 <script>
 export default {
-  
+  props: ['data'],
+  mounted() {
+    console.log(this.data)
+  }
 
 }
 </script>

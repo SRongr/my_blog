@@ -35,7 +35,7 @@ import Article from './contentCompontents/Article'
 import Random from './contentCompontents/Random'
 import HotModule from './contentCompontents/HotModule'
 import CommentModule from './contentCompontents/CommentModule'
-import FirendlyModule from './contentCompontents/FirendlyModule'
+import FriendlyModule from './contentCompontents/FriendlyModule'
 import Right from './contentCompontents/CommonRight'
 export default {
   components: {
