@@ -3,8 +3,13 @@ import Vue from 'vue'
 import { createStore } from './store'
 import { createRouter } from './router'
 import { sync } from 'vuex-router-sync'
+import util from './util/util'
+import axios from 'axios'
 
 
+const $http = axios.create()
+Vue.prototype.$http = $http
+Vue.prototype.$util = util
 
 // Expose a factory function that creates a fresh set of store, router,
 // app instances on each call (which is called for each SSR request)

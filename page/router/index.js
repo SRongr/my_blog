@@ -3,8 +3,6 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-// const Test = () => import(/* webpackChunkName: "test" */'../views/Test.vue')
-// const Demo = () => import(/* webpackChunkName: "demo" */'../views/Demo.vue')
 import Demo from './demo'
 export function createRouter () {
   return new Router({

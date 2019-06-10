@@ -12,146 +12,31 @@
 
 
 <script>
+import Right from './contentCompontents/CommonRight'
 export default {
   data() {
     return{
       data: [
         {
-          content: '哈哈哈哈',
+          content: 'Vue-SSR服务端渲染',
           src: ''
         },
         {
-          content: '哈哈哈哈',
+          content: 'javascript 异步I/O 事件驱动',
           src: ''
         },
         {
-          content: '哈哈哈哈',
+          content: 'express 简洁开发',
           src: ''
         },
         {
-          content: '哈哈哈哈',
+          content: 'NG-ALAIN 一套中后台管理方案',
           src: ''
         },
         {
-          content: '哈哈哈哈',
+          content: '我的个人博客',
           src: ''
         },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        },
-        {
-          content: '哈哈哈哈',
-          src: ''
-        }
       ]
     }
   },
@@ -181,6 +66,7 @@ export default {
       margin 20px auto
       width 90%
       border 1px solid #dddddd
+      min-height 500px
       .content-title
         font-weight 500
       li 

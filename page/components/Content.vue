@@ -5,9 +5,6 @@
       Every.item(:data="everyData")
       .article-list 
         Article.item(v-for='item,index in articleList', :data="item", :key="index")
-        //- Article.item
-        //- Article.item
-        //- Article.item
     .right
       Right
 </template>
@@ -66,6 +63,17 @@ export default {
   },
   mounted() {
     console.log(this.articleList)
+    this.$util.request({
+      vm:this,
+      baseURL:'http://localhost:12306/api/queryAllArticles',
+      done: data => {
+        console.log(data)
+        this.articleList = data.articleArr
+      },
+      fail: err => {
+        console.log(err)
+      }
+    })
   }
 }
 </script>

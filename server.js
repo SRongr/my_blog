@@ -10,7 +10,6 @@ const { createBundleRenderer } = require('vue-server-renderer')
 const cookieparser = require('cookie-parser')
 const bodyParser = require('body-parser')
 
-
 const isProd = process.env.NODE_ENV === 'production'
 const useMicroCache = process.env.MICRO_CACHE !== 'false'
 const serverInfo =
@@ -125,7 +124,7 @@ function render (req, res) {
 app.get('*', isProd ? render : (req, res) => {
   readyPromise.then(() => render(req, res))
 })
-
+// app.get('/api/queryArticleDetail',loader.get('/api/queryArticleDetail'))
 const port = process.env.PORT || 8080
 app.listen(port, () => {
   console.log(`server started at localhost:${port}`)

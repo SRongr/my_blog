@@ -5,13 +5,13 @@
         .title SRongr的个人博客 | 技术博客
         ul.list
           li.active
-            a(href="/") 首页
+            router-link(to="/") 首页
           li
-            a(href="/map") 地图
+            router-link(to="/map") 地图
           li
-            a(href="/about") 关于
+            router-link(to="/about") 关于
           li
-            a(href="/message") 留言
+            router-link(to="/message") 留言
       .right
         input(placeholder='输入关键词查找')
         button.search 搜索
@@ -29,6 +29,7 @@ export default {
     width 100%
     height 50px
     background-color #191818
+    z-index 10
     .content
       width 80%
       height 100%

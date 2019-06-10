@@ -1,17 +1,23 @@
 <template lang="pug">
   .wrapper
     .content
-      a.title(:href="data.href")  {{data.title}}
-      .content-text {{data.content}}
+      a.title(:href="`/article/${data.id}`")  {{data.title}}
+      .content-text(v-html="data.content")
     .foot
-      .foot-text 发布于2019-02-14 | 浏览 (123) | Tags: 微信
+      .foot-text 发布于{{date}} | 浏览 {{data.views}} | Tags: {{data.tags}}
 </template>
 
 <script>
+import * as moment from 'moment'
 export default {
   props: ['data'],
   data() {
     return {
+    }
+  },
+  computed: {
+    date() {
+      return moment(this.data.utime * 1000).format('YYYY-MM-DD')
     }
   }
 }
@@ -39,6 +45,11 @@ export default {
           cursor pointer
       .content-text 
         font-size 14px
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     .foot
       padding-left 15px
       background-color #1f1f1f
