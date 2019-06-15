@@ -12,17 +12,17 @@
           .top
             span.top-name SRongr
             span.top-content : 发表于 2018年06月26日 12:35
-          p.bottom 用的最近学的东西 Vue-SSR MySQL 
+          p.bottom 是论文创造了他
         .item
           .top
             span.top-name SRongr
             span.top-content : 发表于 2018年06月26日 12:35
-          p.bottom 用的最近学的东西 Vue-SSR MySQL
+          p.bottom 用了些什么框架呢
         .item
           .top
             span.top-name SRongr
             span.top-content : 发表于 2018年06月26日 12:35
-          p.bottom 用的最近学的东西 Vue-SSR MySQL
+          p.bottom 服务器练手项目
           
 
     .right

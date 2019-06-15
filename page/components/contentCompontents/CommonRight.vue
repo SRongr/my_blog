@@ -26,70 +26,70 @@ export default {
       data: {
         randomList: [
           {
-            content: 'asdasd',
+            content: 'nodejs',
             href: ''
           },
           {
-            content: '阿斯达阿迪a',
+            content: 'test2',
             href: ''
           },
           {
-            content: 'asdada阿斯达啊',
+            content: 'test1',
+            href: ''
+          },
+          {
+            content: 'cors',
             href: ''
           }
         ],
         hotList:[
           {
-            content: '伟大的王荣铄啊',
+            content: '高性能Javascript',
             href: ''
           },
           {
-            content: '伟大的王荣铄啊',
+            content: '单线程异步驱动',
             href: ''
           },
           {
-            content: '伟大的王荣铄啊',
+            content: 'MVVM框架与MVC的区别',
             href: ''
           }
         ],
         commentList: [
           {
-            name: 'bbb',
+            name: 'SRongr',
             time: '1周前',
-            content: 'dadadad'
+            content: '创建'
           },
           {
-            name: 'bbb',
+            name: '阿萨类',
             time: '1周前',
-            content: 'dadadad'
+            content: '来看看'
           },
           {
-            name: 'bbb',
+            name: 'big boy',
             time: '1周前',
-            content: 'dadadad'
+            content: '嘻嘻'
           }
         ],
         friendList: [
           {
-            content: '个人博客',
+            content: '单线程异步I/O',
             href: ''
           },
           {
-            content: '个人博客',
+            content: '为什么选择Node',
             href: ''
           },
           {
-            content: '个人博客',
+            content: '轻量级的前端框架',
             href: ''
           },
           {
-            content: '个人博客',
+            content: '阿里中后台解决方案',
             href: ''
           },
-          {
-            content: '个人博客',
-            href: ''
-          }
         ]
       }
     }

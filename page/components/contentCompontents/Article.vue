@@ -50,6 +50,7 @@ export default {
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        max-height 60px
     .foot
       padding-left 15px
       background-color #1f1f1f

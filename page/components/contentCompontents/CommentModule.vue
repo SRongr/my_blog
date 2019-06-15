@@ -8,24 +8,7 @@
           .time {{item.time}}
         .item-bottom
           .text {{item.content}}
-      .content-item 
-        .item-top
-          .name bbb
-          .time [6天前]
-        .item-bottom 
-          .text 啊大大阿达啊啊 啊
-      .content-item 
-        .item-top
-          .name bbb
-          .time [6天前]
-        .item-bottom 
-          .text 啊大大阿达啊啊 啊
-      .content-item 
-        .item-top
-          .name bbb
-          .time [6天前]
-        .item-bottom 
-          .text 啊大大阿达啊啊 啊
+
 </template>
 
 

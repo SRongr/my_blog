@@ -14,24 +14,24 @@
           p 生于19年
           p 不知道下次是什么时候更新
           p 初学服务器,拿来练练手
-          p 用的最近学的东西 Vue-SSR MySQL 
+          p 边学边用
       p.about-message 关于: 目前有1条留言
       .message-box
         .item
           .top
             span.top-name SRongr
             span.top-content : 发表于 2018年06月26日 12:35
-          p.bottom 用的最近学的东西 Vue-SSR MySQL 
+          p.bottom 是论文创造了他
         .item
           .top
             span.top-name SRongr
             span.top-content : 发表于 2018年06月26日 12:35
-          p.bottom 用的最近学的东西 Vue-SSR MySQL
+          p.bottom 用了些什么框架呢
         .item
           .top
             span.top-name SRongr
             span.top-content : 发表于 2018年06月26日 12:35
-          p.bottom 用的最近学的东西 Vue-SSR MySQL
+          p.bottom 服务器练手项目
           
 
     .right
